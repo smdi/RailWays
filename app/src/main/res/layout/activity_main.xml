@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    tools:context="com.example.android.railways.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="350dp">
+
+            <TextView
+                android:id="@+id/display_bes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:text="X:"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/dispaly_view"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/display_bes"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/display_bes"
+                android:layout_toRightOf="@+id/display_bes"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:hint="Value of x"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ydisplay_bes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:text="Y:"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/ydispaly_view"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/ydisplay_bes"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:hint="value of  y"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/xtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="140dp"
+                android:text="Length : "
+                android:textColor="#000"
+                android:textSize="25sp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_x"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="140dp"
+                android:layout_toRightOf="@+id/xtext"
+                android:background="#FFF"
+                android:hint=" length in  metre "
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textColor="#000"
+
+                />
+
+            <TextView
+                android:id="@+id/ytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="200dp"
+                android:text="Delta:"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edit_y"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="200dp"
+                android:layout_toRightOf="@+id/ytext"
+                android:background="#FFF"
+                android:hint="  degrees "
+                android:inputType="numberDecimal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textColor="#000"
+
+
+                />
+
+
+            <Button
+                android:id="@+id/cal_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ytext"
+                android:layout_margin="40dp"
+                android:background="#FF69B4"
+                android:onClick="calResult"
+                android:text="Traction-power"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
