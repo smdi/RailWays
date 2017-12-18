@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             else {
 
 
-
+// just
                   double X = (y-35)*.017*(x);
                   double Y = 3*(y-35)*.017*(x);
 
